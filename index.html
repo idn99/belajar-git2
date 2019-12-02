@@ -9,12 +9,30 @@
     </div>
 </div>
 
+<h1>Belajar Html</h1>
+<h2>Menghitung Segiempat</h2>
+<div id="content">
+    Sisi :  <input id="sisi"><br>
+    <input type="submit" value="Hitung" onclick="segiempat()">
+    <div id="hasil2">
+
+    </div>
+</div>
+
 <script>
     function segitiga(){
         var a = document.getElementById('alas').value;
         var t = document.getElementById('tinggi').value;
         var hasil = document.getElementById('hasil');
         var luas = (a*t)/2;
+        hasil.innerText = luas;
+        console.log(luas);
+    }
+
+    function segiempat(){
+        var sisi = document.getElementById('sisi').value;
+        var hasil = document.getElementById('hasil2');
+        var luas = sisi * sisi;
         hasil.innerText = luas;
         console.log(luas);
     }
