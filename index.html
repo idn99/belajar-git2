@@ -1,0 +1,21 @@
+<h1>Belajar Html</h1>
+<h2>Menghitung Segitiga</h2>
+<div id="content">
+    Alas :  <input id="alas"><br>
+    Tinggi  :   <input id="tinggi"><br>
+    <input type="submit" value="Hitung" onclick="segitiga()">
+    <div id="hasil">
+
+    </div>
+</div>
+
+<script>
+    function segitiga(){
+        var a = document.getElementById('alas').value;
+        var t = document.getElementById('tinggi').value;
+        var hasil = document.getElementById('hasil');
+        var luas = (a*t)/2;
+        hasil.innerText = luas;
+        console.log(luas);
+    }
+</script>
